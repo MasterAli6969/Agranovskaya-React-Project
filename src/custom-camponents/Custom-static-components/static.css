@@ -1,0 +1,16 @@
+/* НИЖЕ БУДУТ УКАЗАННЫ СТАТИЧЕСКИЕ СТИЛИ КАСТОМНЫХ ЭЛЕМЕНТОВ ДЛЯ АВАТАРОК СОТРУДНИКОВ */
+
+.avaName {
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0 0 0 0;
+}
+
+.jobTitle {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0 0 0 0;
+}
+
+.imagePath {
+}
