@@ -1,4 +1,4 @@
-function CastomDiv(props) {
+function CustomDiv(props) {
   const {
     divArray,
     castomDivStyleConteiner,
@@ -11,10 +11,10 @@ function CastomDiv(props) {
         <div className={`${castomDivStyleConteiner}`} key={component.id}>
           <>
             <div className={`${castomDivStyleSubConteinerLeft}`}>
-              {component.left}
+              {component.componentOne}
             </div>
             <div className={`${castomDivStyleSubConteinerRight}`}>
-              {component.right}
+              {component.componentTwo}
             </div>
           </>
         </div>
@@ -22,4 +22,4 @@ function CastomDiv(props) {
     </>
   );
 }
-export default CastomDiv;
+export default CustomDiv;

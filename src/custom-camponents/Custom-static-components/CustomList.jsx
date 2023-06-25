@@ -3,6 +3,7 @@ function CustomList(props) {
     linkArray,
     customUlStyle,
     customLiStyle,
+    customPStyle,
     customAStyle,
     customImgStyle,
   } = props;
@@ -11,9 +12,10 @@ function CustomList(props) {
       {linkArray.map((link, index) => {
         return (
           <li className={` ${customLiStyle}`} key={index}>
+            <p className={` ${customPStyle}`}> {link.text}</p>
             <a className={` ${customAStyle}`} href={link.url}>
               <img className={`${customImgStyle}`} src={link.image} />
-              {link.text}
+              {link.link}
             </a>
           </li>
         );

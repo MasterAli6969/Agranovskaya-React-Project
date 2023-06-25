@@ -1,0 +1,80 @@
+/*ОБЩИЕ MIXIN СВОЙСТВА ДЛЯ КОНТЕЙНЕРОВ*/
+
+@mixin flexConteiner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*ОБЩИЕ MIXIN СВОЙСТВА ДЛЯ КОНТЕЙНЕРА НЕУПОРЯДОЧЕННЫХ СПИСКОВ */
+
+@mixin flexUl {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+@mixin textUlStyle {
+  text-decoration: none;
+  color: white;
+  font-size: 16;
+  font-weight: bold;
+}
+
+/*ВСЕ СТИЛИ УКАЗАННЫЕ НИЖЕ ОТНОСЯТСЯ К ОБЩЕМУ КОНТЕЙНЕРУ КОНТЕНТА ДЕСКТОПНОГО МЕНЮ*/
+
+.global_div_header {
+  @include flexConteiner;
+  height: 200px;
+  background-color: #010511;
+  padding: 2% 0 0 0;
+}
+
+.global_div_left_header {
+  width: 25%;
+  margin: 0 0 0 5%;
+}
+
+.global_div_right_header {
+  width: 75%;
+}
+
+/*все что ниже касается ПАРНЫХ стилей для списка ССЫЛОК номера и иконок*/
+
+.header_ul_number_icon_style,
+.header_ul_linck_style {
+  @include flexUl;
+  margin: 0 10% 0 0;
+}
+
+.header_number_style,
+.header_a_linck_style {
+  @include textUlStyle;
+}
+
+/*доп уникальные стили для стилей номера и иконок*/
+
+.header_ul_number_icon_style {
+  justify-content: flex-end;
+}
+.header_li_number_icon_style {
+  margin: 0 0 0 1.5%;
+}
+
+/*доп уникальные стили для стилей кнопок меню*/
+
+.header_li_linck_style {
+  margin: 0 0 0 7%;
+}
+
+.header_hr {
+  width: 79%;
+}
+
+.header_a_linck_style:hover {
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+  background-color: #64c1c4;
+  border-radius: 20px;
+}
