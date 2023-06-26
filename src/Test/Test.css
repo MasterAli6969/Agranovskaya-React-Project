@@ -1,0 +1,27 @@
+.test_conteiner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.component1 {
+  width: 100px;
+  height: 200px;
+  background-color: red;
+  margin: 50px;
+}
+
+.component2 {
+  display: none;
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  margin: 50px;
+}
+
+.component1._active {
+  background-color: blue;
+}
+
+.component2._visible {
+  display: block;
+}

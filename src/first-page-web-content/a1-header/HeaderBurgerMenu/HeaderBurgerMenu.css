@@ -1,0 +1,77 @@
+.header_ul_Burger_linck_style {
+  display: none;
+  list-style: none;
+  background-color: #64c1c4;
+  padding: 5%;
+  height: 100%;
+  width: 60%;
+}
+
+.header_li_Burger_linck_style {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header_a_Burger_linck_style {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.header_a_Burger_linck_style:hover {
+  padding: 10px;
+  color: #64c1c4;
+  font-size: 25px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/*все стили ниже для иконки бургера*/
+.burger_icon_conteiner {
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  margin: 0 0 0 0;
+  z-index: 2;
+}
+
+.burger_icon {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  background-color: red;
+  width: 30px;
+  height: 3px;
+  margin: 10px auto;
+}
+
+.burger_icon::after {
+  position: absolute;
+  top: 10px;
+  content: "";
+  background-color: red;
+  width: 30px;
+  height: 3px;
+}
+
+.burger_icon::before {
+  position: absolute;
+  top: 20px;
+  content: "";
+  background-color: red;
+  width: 30px;
+  height: 3px;
+}
+
+.burger_icon_conteiner:hover {
+  background-color: white;
+  border-radius: 50px;
+}
+
+.header_ul_Burger_linck_style._modif{
+  display: block;
+}

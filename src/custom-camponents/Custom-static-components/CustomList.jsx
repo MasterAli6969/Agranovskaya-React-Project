@@ -6,9 +6,11 @@ function CustomList(props) {
     customPStyle,
     customAStyle,
     customImgStyle,
+    customModif,
+    isVisible
   } = props;
   return (
-    <ul className={`${customUlStyle}`}>
+    <ul className={`${customUlStyle} ${isVisible ? customModif : ""}`}>
       {linkArray.map((link, index) => {
         return (
           <li className={` ${customLiStyle}`} key={index}>

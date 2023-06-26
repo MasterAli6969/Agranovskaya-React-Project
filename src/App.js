@@ -1,9 +1,9 @@
 import "./App.css";
-import HeaderDesktop from "./first-page-web-content/a1-header/HeaderDesktop";
+import HeaderEnd from "./first-page-web-content/a1-header/HeaderEnd";
 function App() {
   return (
     <>
-      <HeaderDesktop />
+      <HeaderEnd/>
     </>
   );
 }
