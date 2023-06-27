@@ -1,5 +1,4 @@
 import "./Header.scss";
-
 function Logo() {
   return (
     <div>

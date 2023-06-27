@@ -12,7 +12,7 @@ function HeaderEnd() {
     return () => window.removeEventListener("resize", hendleWidth);
   }, []);
 
-  return <>{windowWidth <= 1000 ? (<HeaderBurger />) : (<HeaderDesktop />)}</>;
+  return <>{windowWidth <= 1080 ? (<HeaderBurger />) : (<HeaderDesktop />)}</>;
 }
 
 export default HeaderEnd;

@@ -1,9 +1,6 @@
 import "./Header.scss";
 import CustomList from "../../custom-camponents/Custom-static-components/CustomList";
 export function NumberIcons() {
-  const UlStyle = "header_ul_number_icon_style";
-  const LiStyle = "header_li_number_icon_style";
-  const PStyle = "header_number_style";
   const IconLinksSocialWebArray = [
     {
       id: "0",
@@ -36,9 +33,9 @@ export function NumberIcons() {
     <>
       <CustomList
         linkArray={IconLinksSocialWebArray}
-        customUlStyle={UlStyle}
-        customLiStyle={LiStyle}
-        customPStyle={PStyle}
+        customUlStyle={"header_ul_number_icon_style"}
+        customLiStyle={"header_li_number_icon_style"}
+        customPStyle={"header_number_style"}
       />
       <hr className="header_hr" />
     </>
@@ -46,9 +43,6 @@ export function NumberIcons() {
 }
 
 export function HeaderNavLinks() {
-  const UlStyle = "header_ul_linck_style";
-  const LiStyle = "header_li_linck_style";
-  const AStyle = "header_a_linck_style";
   const HeaderNavLinks = [
     {
       url: "#",
@@ -78,9 +72,9 @@ export function HeaderNavLinks() {
   return (
     <CustomList
       linkArray={HeaderNavLinks}
-      customUlStyle={UlStyle}
-      customLiStyle={LiStyle}
-      customAStyle={AStyle}
+      customUlStyle={"header_ul_linck_style"}
+      customLiStyle={"header_li_linck_style"}
+      customAStyle={"header_a_linck_style"}
     />
   );
 }

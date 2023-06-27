@@ -9,7 +9,7 @@ function HeaderBurger() {
   };
   return (
     <>
-      <BurgerIcon onClick={handleClick} />
+      <BurgerIcon onClick={handleClick} addIconLock={isVisible} />
       <HeaderBurgerMenuContent isVisible={isVisible} />
     </>
   );
