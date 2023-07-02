@@ -1,10 +1,9 @@
 import "./Header.scss";
 import CustomList from "../../custom-camponents/Custom-static-components/CustomList";
 export function NumberIcons() {
-  const IconLinksSocialWebArray = [
+  const iconLinksSocialWebArray = [
     {
       id: "0",
-      url: "#",
       text: "+7 926 996 14 55",
     },
     {
@@ -29,16 +28,17 @@ export function NumberIcons() {
         "/image/img_Header_and_Block1/иконка телеги.png",
     },
   ];
+
+  const iconLinksSocialWebStyle = {
+    customUlStyle: "header_ul_number_icon_style",
+    customLiStyle: "header_li_number_icon_style",
+    customPStyle: "header_number_style",
+  };
   return (
-    <>
-      <CustomList
-        linkArray={IconLinksSocialWebArray}
-        customUlStyle={"header_ul_number_icon_style"}
-        customLiStyle={"header_li_number_icon_style"}
-        customPStyle={"header_number_style"}
-      />
-      <hr className="header_hr" />
-    </>
+    <CustomList
+      linkArray={iconLinksSocialWebArray}
+      customClass={iconLinksSocialWebStyle}
+    />
   );
 }
 
@@ -69,12 +69,13 @@ export function HeaderNavLinks() {
       link: "Контакты",
     },
   ];
+  const headerNavLinksStyle = {
+    customUlStyle: "header_ul_linck_style",
+    customLiStyle: "header_li_linck_style",
+    customAStyle: "header_a_linck_style",
+    customLineStyle: "header_hr",
+  };
   return (
-    <CustomList
-      linkArray={HeaderNavLinks}
-      customUlStyle={"header_ul_linck_style"}
-      customLiStyle={"header_li_linck_style"}
-      customAStyle={"header_a_linck_style"}
-    />
+    <CustomList linkArray={HeaderNavLinks} customClass={headerNavLinksStyle} />
   );
 }

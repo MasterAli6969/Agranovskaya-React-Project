@@ -1,26 +1,23 @@
 function CustomList(props) {
-  const {
-    linkArray,
-    customUlStyle,
-    customLiStyle,
-    customPStyle,
-    customAStyle,
-    customImgStyle,
-  } = props;
+  const {linkArray, customClass,} = props;
   return (
-    <ul className= {`${customUlStyle}`}>
+    <div className={`${customClass.customDivStyle}`}>
+      <div className={`${customClass.customLineStyle}`} />
+    <ul className= {`${customClass.customUlStyle}`}>
+      
       {linkArray.map((link, index) => {
         return (
-          <li className={` ${customLiStyle}`} key={index}>
-            <p className={` ${customPStyle}`}> {link.text}</p>
-            <a className={` ${customAStyle}`} href={link.url}>
-              <img className={`${customImgStyle}`} src={link.image} />
+          <li className={` ${customClass.customLiStyle}`} key={index}>
+            <p className={` ${customClass.customPStyle}`}> {link.text}</p>
+            <a className={` ${customClass.customAStyle}`} href={link.url}>
+              <img className={`${customClass.customImgStyle}`} src={link.image} />
               {link.link}
             </a>
           </li>
         );
       })}
     </ul>
+    </div>
   );
 }
 export default CustomList;

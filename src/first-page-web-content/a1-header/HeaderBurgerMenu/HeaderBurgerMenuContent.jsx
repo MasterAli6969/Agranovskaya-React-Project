@@ -28,6 +28,7 @@ function HeaderBurgerMenuContent(props) {
       link: "Контакты",
     },
   ];
+
   const IconLinksSocialWebArray = [
     {
       id: "0",
@@ -56,13 +57,23 @@ function HeaderBurgerMenuContent(props) {
         "/image/img_Header_and_Block1/иконка телеги.png",
     },
   ];
+  const headerNavLinksBurgerStyle = {
+    customUlStyle: "header_ul_Burger_linck_style",
+    customLiStyle: "header_li_Burger_linck_style",
+    customAStyle: "header_a_Burger_linck_style",
+  };
+
+  const iconLinksSocialWebBurgerStyle = {
+    customUlStyle: "header_ul_number_icon_style",
+    customLiStyle: "header_burger_li_number_icon_style",
+    customPStyle: "header_number_style",
+  };
   return (
     <div
       className={`${"header_div_Burger_linck_style"} ${
         isVisible ? "_modif" : ""
       }`}
     >
-      
       <img
         className="header_Burger_Logo"
         src={
@@ -71,17 +82,13 @@ function HeaderBurgerMenuContent(props) {
       />
       <CustomList
         linkArray={HeaderNavLinks}
-        customUlStyle={"header_ul_Burger_linck_style"}
-        customLiStyle={"header_li_Burger_linck_style"}
-        customAStyle={"header_a_Burger_linck_style"}
+        customClass={headerNavLinksBurgerStyle}
       />
       <div className="header_div_Burger_IconNumbe_linck">
-      <CustomList
-        linkArray={IconLinksSocialWebArray}
-        customUlStyle={"header_ul_number_icon_style"}
-        customLiStyle={"header_burger_li_number_icon_style"}
-        customPStyle={"header_number_style"}
-      />
+        <CustomList
+          linkArray={IconLinksSocialWebArray}
+          customClass={iconLinksSocialWebBurgerStyle}
+        />
       </div>
     </div>
   );

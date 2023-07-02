@@ -1,19 +1,19 @@
 function CustomDiv(props) {
-  const {
-    divArray,
-    castomDivStyleConteiner,
-    castomDivStyleSubConteinerLeft,
-    castomDivStyleSubConteinerRight,
-  } = props;
+  const { divArray, customClass = {} } = props;
   return (
     <>
       {divArray.map((component) => (
-        <div className={`${castomDivStyleConteiner}`} key={component.id}>
+        <div
+          className={`${customClass.customDivStyleConteiner} ${customClass.additionalivStyleConteiner}`}
+          key={component.id}
+        >
           <>
-            <div className={`${castomDivStyleSubConteinerLeft}`}>
+            <div
+              className={`${customClass.customDivStyleSubConteinerLeft} ${customClass.additionalDivStyleSubConteinerLeft}`}
+            >
               {component.componentOne}
             </div>
-            <div className={`${castomDivStyleSubConteinerRight}`}>
+            <div className={`${customClass.customDivStyleSubConteinerRight} ${customClass.additionalClassDivStyleSubConteinerRight}`}>
               {component.componentTwo}
             </div>
           </>

@@ -9,6 +9,7 @@ function HeaderContentRight() {
       componentTwo: <HeaderNavLinks />,
     },
   ];
+  
   return <CustomDiv divArray={headerContentRight} />;
 }
 export default HeaderContentRight;

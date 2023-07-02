@@ -63,12 +63,19 @@
 
 /*доп уникальные стили для стилей кнопок меню*/
 
+.header_desktop_logo {
+  margin: 20px 0 0 0;
+}
+
 .header_li_linck_style {
   margin: 0 0 0 7%;
 }
 
 .header_hr {
-  width: 79%;
+  background-color: white;
+  width: 80%;
+  height: 2px;
+  margin:  0 0 3% 10%;
 }
 
 .header_a_linck_style:hover {

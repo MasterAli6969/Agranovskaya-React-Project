@@ -10,12 +10,15 @@ function HeaderDesktop() {
       componentTwo: <HeaderContentRight />,
     },
   ];
+  const logoHeaderObjectStyle = {
+    customDivStyleConteiner: "global_div_header",
+    customDivStyleSubConteinerLeft: "global_div_left_header",
+    customDivStyleSubConteinerRight: "global_div_right_header",
+  };
   return (
     <CustomDiv
       divArray={logoHeaderObject}
-      castomDivStyleConteiner={"global_div_header"}
-      castomDivStyleSubConteinerLeft={"global_div_left_header"}
-      castomDivStyleSubConteinerRight={"global_div_right_header"}
+      customClass={logoHeaderObjectStyle}
     />
   );
 }
