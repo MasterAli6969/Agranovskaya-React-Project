@@ -1,16 +1,55 @@
 /* НИЖЕ БУДУТ УКАЗАННЫ СТАТИЧЕСКИЕ СТИЛИ КАСТОМНЫХ ЭЛЕМЕНТОВ ДЛЯ АВАТАРОК СОТРУДНИКОВ */
 
-.avaName {
-  font-weight: 900;
-  font-size: 40px;
-  margin: 0 0 0 0;
+.first_page_team_Div {
+  display: flex;
+  margin: 10% 0 0 0;
+  width: 100%;
+  min-height: 0;
 }
 
-.jobTitle {
+.first_page_team_second_block_Div_Left {
+  order: 2;
+  width: 100%;
+  min-height: 0;
+}
+
+.first_page_team_second_block_Div_Right {
+  order: 1;
+}
+
+.avatar_div_style_conteiner {
+  position: relative;
+  margin: 50px 0 0 50px;
+  padding: 0;
+  width: 550px;
+  height: 700px;
+}
+
+.avatar_div_text_style_conteiner {
+  position: absolute;
+  width: 70%;
+  height: 200px;
+  top: 10px;
+  right: 0;
+}
+
+.avatar_text1_style {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 35px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.avatar_text2_style {
+  position: absolute;
+  top: 50px;
+  right: 0;
   font-size: 20px;
   font-weight: normal;
-  margin: 0 0 0 0;
 }
 
-.imagePath {
+.avatar_image_style {
+  position: absolute;
 }

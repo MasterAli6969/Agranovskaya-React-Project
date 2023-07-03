@@ -11,19 +11,7 @@ export function FirstPageTeamContentAvatar1() {
         process.env.PUBLIC_URL + "/image/first-page-team/Аватарка1.png",
     },
   ];
-  const avaStyleObject = {
-    castomDivStyle: "avatar_div_style_conteiner",
-    castomDivTextStyle: "avatar_div_text_style_conteiner",
-    castomText1Style: "avatar_text1_style",
-    castomText2Style: "avatar_text2_style",
-    castomImgStyle: "avatar_image_style",
-  };
-  return (
-    <CustomAvatarImage
-      AvaArrayObject={avaArrayFirst}
-      customClass={avaStyleObject}
-    />
-  );
+  return <CustomAvatarImage AvaArrayObject={avaArrayFirst} />;
 }
 
 export function FirstPageTeamContentInfoList1() {
@@ -58,8 +46,8 @@ export function FirstPageTeamContentInfoList1() {
     },
   ];
   const infoListTextArrayStyleOdject = {
-    customDivStyle:"info_Div_List_Text",
-    customLineStyle:"info_Line_List_Text",
+    customDivStyle: "info_Div_List_Text",
+    customLineStyle: "info_Line_List_Text",
     customUlStyle: "info_Ul_List_Text",
     customLiStyle: "info_Li_Text",
     customPStyle: "info_P_Text",
