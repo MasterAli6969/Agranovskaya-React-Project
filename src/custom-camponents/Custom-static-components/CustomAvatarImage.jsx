@@ -1,5 +1,5 @@
 import "./static.css";
-function CustomAvatarImage({AvaArrayObject, customClass = {}}) {
+function CustomAvatarImage({ AvaArrayObject, customClass = {} }) {
   return (
     <>
       {AvaArrayObject.map((content, index) => {
@@ -11,14 +11,8 @@ function CustomAvatarImage({AvaArrayObject, customClass = {}}) {
             <div
               className={`avatar_div_text_style_conteiner ${customClass.castomDivTextStyle}`}
             >
-              <p
-                className={`avatar_text1_style ${customClass.castomText1Style}`}
-              >
-                {content.name}
-              </p>
-              <p
-                className={`avatar_text2_style ${customClass.castomText2Style}`}
-              >
+              <p className={`avatar_text1_style `}>{content.name}</p>
+              <p className={`avatar_text2_style `}>
                 {content.jobTitle1}
                 <br />
                 {content.jobTitle2}

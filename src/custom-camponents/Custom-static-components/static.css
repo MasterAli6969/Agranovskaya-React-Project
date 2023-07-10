@@ -1,22 +1,5 @@
 /* НИЖЕ БУДУТ УКАЗАННЫ СТАТИЧЕСКИЕ СТИЛИ КАСТОМНЫХ ЭЛЕМЕНТОВ ДЛЯ АВАТАРОК СОТРУДНИКОВ */
 
-.first_page_team_Div {
-  display: flex;
-  margin: 10% 0 0 0;
-  width: 100%;
-  min-height: 0;
-}
-
-.first_page_team_second_block_Div_Left {
-  order: 2;
-  width: 100%;
-  min-height: 0;
-}
-
-.first_page_team_second_block_Div_Right {
-  order: 1;
-}
-
 .avatar_div_style_conteiner {
   position: relative;
   margin: 50px 0 0 50px;
@@ -27,6 +10,9 @@
 
 .avatar_div_text_style_conteiner {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   width: 70%;
   height: 200px;
   top: 10px;
@@ -34,18 +20,12 @@
 }
 
 .avatar_text1_style {
-  position: absolute;
-  top: 0;
-  right: 0;
   font-size: 35px;
   font-weight: 900;
   margin: 0;
 }
 
 .avatar_text2_style {
-  position: absolute;
-  top: 50px;
-  right: 0;
   font-size: 20px;
   font-weight: normal;
 }

@@ -11,8 +11,17 @@ export function FirstPageTeamContentAvatar2() {
         process.env.PUBLIC_URL + "/image/first-page-team/Аватарка-Сергей.png",
     },
   ];
+  const avaUniqueChangesObjectClass = {
+    castomDivTextStyle: "avatar_div_text_style_conteiner_second_block",
+    castomImgStyle: "avatar_image_style_second_block",
+  };
 
-  return <CustomAvatarImage AvaArrayObject={avaArrayFirst} />;
+  return (
+    <CustomAvatarImage
+      AvaArrayObject={avaArrayFirst}
+      customClass={avaUniqueChangesObjectClass}
+    />
+  );
 }
 
 export function FirstPageTeamContentInfoList2() {
@@ -46,17 +55,17 @@ export function FirstPageTeamContentInfoList2() {
       text: "Языки: русский, английский, испанский Рейтинг ведущих экспертов Chambers FinTech Guide, The Legal 500",
     },
   ];
-  const infoListTextArrayStyleOdject = {
+  const infoListTextStyleOdject = {
     customDivStyle: "info_Div_List_Text",
     customLineStyle: "info_Line_List_Text",
     customUlStyle: "info_Ul_List_Text",
-    customLiStyle: "info_Li_Text",
-    customPStyle: "info_P_Text",
+    customADDLineStyle: "info_Line_List_Text_Second_Block",
+    customAddUlStyle: "info_Ul_List_Text_Second_Block",
   };
   return (
     <CustomList
       linkArray={infoListTextArray}
-      customClass={infoListTextArrayStyleOdject}
+      customClass={infoListTextStyleOdject}
     />
   );
 }

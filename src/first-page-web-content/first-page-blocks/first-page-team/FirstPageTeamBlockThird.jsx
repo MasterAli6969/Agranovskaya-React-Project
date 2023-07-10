@@ -50,8 +50,6 @@ export function FirstPageTeamContentInfoList3() {
     customDivStyle: "info_Div_List_Text",
     customLineStyle: "info_Line_List_Text",
     customUlStyle: "info_Ul_List_Text",
-    customLiStyle: "info_Li_Text",
-    customPStyle: "info_P_Text",
   };
   return (
     <CustomList
