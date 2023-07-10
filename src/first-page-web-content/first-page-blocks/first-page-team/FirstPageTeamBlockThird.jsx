@@ -12,7 +12,16 @@ export function FirstPageTeamContentAvatar3() {
     },
   ];
 
-  return <CustomAvatarImage AvaArrayObject={avaArrayFirst} />;
+  const avaUniqueChangesObjectClass = {
+    castomImgStyle: "avatar_image_style_Third_block",
+  };
+
+  return (
+    <CustomAvatarImage
+      AvaArrayObject={avaArrayFirst}
+      customClass={avaUniqueChangesObjectClass}
+    />
+  );
 }
 
 export function FirstPageTeamContentInfoList3() {
