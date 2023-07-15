@@ -1,0 +1,32 @@
+.conteiner_Div_footer_Up_title_info {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.sub_conteiner_Div_footer_Up_icon_info {
+    display: flex;
+}
+
+.footer_Up_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.conteiner_Div_footer_up_text_content {
+    display: block;
+}
+
+.footer_tiitle {
+}
+
+.footer_Up_text {
+}
+
+.textClacc1 {
+  font-size: 32px;
+}
+
+.textclacc2 {
+  font-size: 16px;
+}

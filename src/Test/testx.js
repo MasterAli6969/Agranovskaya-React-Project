@@ -20,6 +20,35 @@ function toIndustrial(time) {
   }
 }
 
-function minimumPerimeter(area) {
-  return;
+function powerOf4(n) {
+  return Number.isInteger(n) && Number.isInteger(Math.log(n) / Math.log(4));
+}
+
+function getFreeUrinals(urinals) {
+  let uriArray = urinals.split("").map(Number);
+  for (let i = 0; i < uriArray.length; i++) {
+    if (uriArray[i - 1] === 1 || uriArray[i + 1] === 1) {
+      return -1;
+    } else if (uriArray[i - 1] === 0 || uriArray[i + 1] === 0) {
+      return 0;
+    } else {
+      return 3;
+    }
+  }
+}
+
+function lineupStudents(students) {
+  if (typeof students === "string") {
+    let arrayStudent = students.split(/\s+/);
+    return arrayStudent.sort((a, b) => b.length - a.length);
+  } else if (
+    Array.isArray(students) &&
+    students.every((e) => typeof e === "string")
+  ) {
+    return students.sort((a, b) => b.length - a.length);
+  }
+}
+
+function totalAmountVisible(topNum, numOfSides) {
+  return numOfSides * (numOfSides + 1) + topNum;
 }
