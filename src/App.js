@@ -4,7 +4,8 @@ import HeadBlock from "./first-page-web-content/first-page-blocks/first-page-hea
 import FirstPageTeam from "./first-page-web-content/first-page-blocks/first-page-team/firstPageTeam";
 import Form from "./first-page-web-content/Form/Form";
 import TestCustom from "./test";
-import { FooterUpTitleInfo } from "./first-page-web-content/z1-footer/footer_up/FooterUpContetn";
+import FooterUp from "./first-page-web-content/z1-footer/footer_up/FooterUp";
+import FooterDown from "./first-page-web-content/z1-footer/footer-down/footerDown";
 function App() {
   return (
     <>
@@ -16,7 +17,9 @@ function App() {
 
       <Form />
 
-      <FooterUpTitleInfo/>
+      <FooterUp />
+
+      <FooterDown/>
     </>
   );
 }
