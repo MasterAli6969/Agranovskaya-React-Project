@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "./Header.css";
 import CustomDiv from "../../custom-camponents/Custom-static-components/CustomDiv";
 import Logo from "./HeaderLogo";
 import HeaderContentRight from "./HeaderContentRight";

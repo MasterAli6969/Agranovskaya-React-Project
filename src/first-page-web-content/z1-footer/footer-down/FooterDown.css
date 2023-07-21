@@ -2,7 +2,7 @@
   background-color: black;
   color: white;
   width: 100%;
-  height: 120px;
+  min-height: 0;
 }
 
 .conteiner_Div_footer_down {
@@ -12,6 +12,8 @@
 }
 
 .conteiner_Sub_Div_footer_down {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .conteiner_Div_footer_down_text {

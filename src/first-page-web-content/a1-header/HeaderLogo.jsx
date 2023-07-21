@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "./Header.css";
 function Logo() {
   return (
     <div>

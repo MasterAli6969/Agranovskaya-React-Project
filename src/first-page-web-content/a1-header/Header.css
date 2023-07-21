@@ -1,30 +1,9 @@
-/*ОБЩИЕ MIXIN СВОЙСТВА ДЛЯ КОНТЕЙНЕРОВ*/
-
-@mixin flexConteiner {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-/*ОБЩИЕ MIXIN СВОЙСТВА ДЛЯ КОНТЕЙНЕРА НЕУПОРЯДОЧЕННЫХ СПИСКОВ */
-
-@mixin flexUl {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-@mixin textUlStyle {
-  text-decoration: none;
-  color: white;
-  font-size: 16;
-  font-weight: bold;
-}
-
 /*ВСЕ СТИЛИ УКАЗАННЫЕ НИЖЕ ОТНОСЯТСЯ К ОБЩЕМУ КОНТЕЙНЕРУ КОНТЕНТА ДЕСКТОПНОГО МЕНЮ*/
 
 .global_div_header {
-  @include flexConteiner;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   height: 200px;
   background-color: #010511;
   padding: 2% 0 0 0;
@@ -43,13 +22,17 @@
 
 .header_ul_number_icon_style,
 .header_ul_linck_style {
-  @include flexUl;
+  display: flex;
+  list-style: none;
   margin: 0 10% 0 0;
 }
 
 .header_number_style,
 .header_a_linck_style {
-  @include textUlStyle;
+  text-decoration: none;
+  color: white;
+  font-size: 16;
+  font-weight: bold;
 }
 
 /*доп уникальные стили для стилей номера и иконок*/
@@ -68,20 +51,34 @@
 }
 
 .header_li_linck_style {
-  margin: 0 0 0 7%;
+  margin: 0 0 0 6%;
 }
 
 .header_hr {
   background-color: white;
   width: 80%;
   height: 2px;
-  margin:  0 0 3% 10%;
+  margin: 0 0 3% 10%;
 }
 
 .header_a_linck_style:hover {
   padding: 10px;
   color: black;
-  font-size: 20px;
+  font-size: 17px;
   background-color: #64c1c4;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 1285px) {
+  .global_div_right_header {
+    width: 65%;
+  }
+  .header_a_linck_style {
+    font-size: 13px;
+  }
+
+  .header_a_linck_style:hover {
+    font-size: 14px;
+    padding: 5px;
+  }
 }

@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "./Header.css";
 import CustomList from "../../custom-camponents/Custom-static-components/CustomList";
 export function NumberIcons() {
   const iconLinksSocialWebArray = [

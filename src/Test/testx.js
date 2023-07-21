@@ -52,3 +52,58 @@ function lineupStudents(students) {
 function totalAmountVisible(topNum, numOfSides) {
   return numOfSides * (numOfSides + 1) + topNum;
 }
+
+function unscrambleEggs(word) {
+  const redex = "/egg/g";
+  return word.replace(redex, "");
+}
+
+function TestConstructor1(example) {
+  this.example = example;
+  this.add = function () {
+    console.log(example);
+  };
+}
+
+const go = new TestConstructor1("string");
+
+go.add();
+
+function Rectangle(width, height) {
+  this.width = width;
+  this.height = height;
+}
+
+Rectangle.prototype.calculateArea = function () {
+  return this.width * this.height;
+};
+const rectangle0 = new Rectangle(5, 10);
+const area0 = rectangle.calculateArea();
+console.log(area);
+
+class Rectangle {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+  calculateArea() {
+    return this.width * this.height;
+  }
+}
+
+const rectangle = new Rectangle(5, 10);
+
+const area = rectangle.calculateArea();
+
+alert(area);
+
+function transposeTwoStrings(array) {
+  return array.forEach((simbol) => {});
+}
+
+function tripleShiftian(base, n) {
+  for (let i = 0; i < n; i++) {
+    base[i] = 4 * base[i - 1] - 5 * base[i - 2] + 3 * base[i - 3];
+    return base[n];
+  }
+}
