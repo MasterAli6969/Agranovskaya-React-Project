@@ -53,7 +53,7 @@ export function HeaderNavLinks() {
       link: "Проекты",
     },
     {
-      url: "#",
+      url: "/second",
       link: "Услуги",
     },
     {

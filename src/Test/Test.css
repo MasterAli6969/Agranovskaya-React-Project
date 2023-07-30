@@ -1,27 +1,12 @@
-.test_conteiner {
-  display: flex;
-  justify-content: space-around;
+.elementor-564 .elementor-element.elementor-element-fbb0696 .elementor-field-group .elementor-field, .elementor-564 .elementor-element.elementor-element-fbb0696 .elementor-field-subgroup label > option {
+  border-radius: 30px;
+  background-color: rgb(150, 150, 185);
+  
 }
+.elementor *, .elementor :after, .elementor :before {
+    background-color: rgb(196, 11, 11);
+  }
 
-.component1 {
-  width: 100px;
-  height: 200px;
-  background-color: red;
-  margin: 50px;
-}
-
-.component2 {
-  display: none;
-  width: 100px;
-  height: 200px;
-  background-color: green;
-  margin: 50px;
-}
-
-.component1._active {
-  background-color: blue;
-}
-
-.component2._visible {
-  display: block;
-}
+  .elementor-564 .elementor-element.elementor-element-fbb0696 .elementor-field-group .elementor-select-wrapper select option {
+    background-color: rgb(196, 11, 11);
+  }

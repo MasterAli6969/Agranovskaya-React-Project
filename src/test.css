@@ -1,0 +1,88 @@
+@media screen and (max-width: 1025px) {
+  .elementor-546
+    .elementor-element.elementor-element-0ff1a74
+    .elementor-nav-menu--main
+    .elementor-item {
+    font-size: 12px;
+    background-color: red;
+  }
+}
+
+.elementor-546
+  .elementor-element.elementor-element-0ff1a74
+  .elementor-nav-menu--main
+  .elementor-item {
+  font-size: 12px;
+  background-color: red;
+}
+
+.elementor-352 .elementor-element.elementor-element-14ff59c,
+.elementor-352
+  .elementor-element.elementor-element-14ff59c
+  > .elementor-background-overlay {
+}
+
+@media screen and (max-width: 1021px) {
+  .elementor-304 .elementor-element.elementor-element-4bd62dd,
+  .elementor-337 .elementor-element.elementor-element-500142d {
+    display: none;
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 1021px) {
+  .ekit-wid-con h4,
+  .ekit-wid-con p {
+    background-color: rgb(216, 8, 8);
+  }
+}
+@media screen and (max-width: 740px) {
+  .elementor-10
+    .elementor-element.elementor-element-dd938ed
+    .elementor-heading-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 740px) {
+  #custom_icon_stas {
+    background-color: rgb(138, 36, 36);
+  }
+  #custom_info_stas {
+  }
+}
+
+#custom_icon_stas{
+  order: 1;
+}
+
+#custom_info_stas{
+  order: 2;
+}
+
+@media screen and (max-width: 770px) {
+  #custom_icon_stas{
+    order: 2;
+  }
+  #custom_info_stas{
+    order: 1;
+  }
+}
+
+/*НИЖЕ КОД ДЕНА*/
+
+.elementor-10
+  .elementor-element.elementor-element-0ab3079
+  .elementkit-tab-nav
+  .elementkit-nav-item
+  .elementkit-nav-link {
+  margin: 1%;
+  height: 60px;
+  align-items: center;
+}
+
+/*------------------------------------*/
+
+.custom_title {
+  font-size: 30px;
+  color: rgb(218, 13, 13);
+}

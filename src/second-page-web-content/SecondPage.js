@@ -1,12 +1,17 @@
+import {
+  PriceListContent1,
+  PriceListContent2,
+  PriceListContent3,
+  PriceListContent4,
+} from "./PriceListContent";
 function SecondPage() {
-    return (
-        <>
-        <div>
-            <h1>САЛАМ МИР
-                ТЫ КРУТОЙ РАЗРАБОТЧИК
-            </h1>
-        </div>
-        </>
-    )
+  return (
+    <>
+      <PriceListContent1 />
+      <PriceListContent2 />
+      <PriceListContent3 />
+      <PriceListContent4 />
+    </>
+  );
 }
-export default SecondPage
+export default SecondPage;

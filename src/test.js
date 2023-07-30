@@ -22,7 +22,8 @@ function TestCustom() {
     customLinksStyle: "",
     customLinksStyle: "",
   };
-  return <CustomFooterList footerListArray={testArrayObject} />;
+  return  <CustomFooterList footerListArray={testArrayObject} />;
+
 }
 
 export default TestCustom;

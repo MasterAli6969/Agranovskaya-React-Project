@@ -33,3 +33,49 @@
 .avatar_image_style {
   position: absolute;
 }
+
+/*ВСЕ СТИЛИ УКАЗАННЫЕ НИЖЕ ОТВЕЧАЮ ЗА КОСТОМНЫЙ КОМПОНЕНТ КОТОРЫЙ ОТОБРАЖАЕТ КОНТЕНТ СТРАНИЦЫ*/
+
+.custom_prise_global_conteiner {
+  display: block;
+  width: 98%;
+  min-height: 0;
+  align-items: center;
+  padding: 1%;
+}
+
+.custom_prise_list_conteiner {
+  width: 70%;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.custom_prise_title {
+}
+
+.custom_prise_item_conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 0 0 0 5%;
+  margin: 0 0 2% 0;
+}
+
+.custom_prise_item_conteiner_right {
+  width: 70%;
+}
+
+.custom_prise_item_description {
+}
+
+.custom_prise_item_conteiner_left {
+  width: 15%;
+  padding: 0 5% 0 5%;
+  border-radius: 0 50px 50px 0;
+  background-color: #64C1C4;
+}
+
+.custom_prise_item_peise_text {
+}
